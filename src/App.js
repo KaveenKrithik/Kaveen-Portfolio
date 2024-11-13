@@ -4,8 +4,8 @@ import ProjectCarousel from "./components/ProjectCarousel";
 import Experience from "./components/Experience";
 import Blog from "./components/Blog";
 import Footer from "./components/Footer";
-import AboutMe from "./components/AboutMe"; // Import AboutMe component
-import Achievements from "./components/Achievements"; // Import Achievements component
+import AboutMe from "./components/AboutMe"; 
+import Achievements from "./components/Achievements"; 
 import "./App.css";
 
 function App() {
