@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.experience {
+    margin: 50px 0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .experience h3 {
+    font-size: 32px;
+    color: #00CCFF;
+    font-weight: bold;
+  }
+  
+  .experience-item {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .experience-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .experience-item h4 {
+    font-size: 24px;
+    color: #FFF;
+    font-weight: 600;
+  }
+  
+  .experience-item p {
+    font-size: 16px;
+    color: #B0B0B0;
+  }
+  

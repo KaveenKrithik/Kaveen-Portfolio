@@ -1,0 +1,68 @@
+/* Achievements.css */
+.achievements-container {
+  text-align: center;
+  padding: 50px;
+  background-color: #1a1a1a;
+  color: white;
+  border-radius: 10px;
+  margin: 50px auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.achievements-container h2 {
+  font-size: 32px;
+  color: #00CCFF;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%; /* Ensure it takes up full width */
+}
+
+.carousel {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  width: 100%; /* Ensure the carousel is full width */
+}
+
+.carousel-image {
+  width: 100%; /* Take full width of the container */
+  height: 400px; /* Fixed height to maintain aspect ratio consistency */
+  object-fit: contain; /* Ensures the entire image is visible without cropping */
+  border-radius: 10px;
+  margin: 0 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-image:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Optional: Add responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .achievements-container h2 {
+    font-size: 28px;
+  }
+
+  .carousel-container {
+    width: 100%;
+  }
+
+  .carousel-image {
+    width: 100%;
+    margin: 0 5px;
+    height: 300px; /* Slightly smaller on mobile */
+  }
+}
+
+
+  

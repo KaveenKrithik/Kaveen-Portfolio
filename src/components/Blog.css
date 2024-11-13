@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+.blog {
+    padding: 50px;
+    text-align: left;
+  }
+  
+  .blog h3 {
+    font-size: 32px;
+    color: #00CCFF;
+  }
+  
+  .blog-post {
+    background-color: #444;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-post:hover {
+    transform: scale(1.05);
+  }
+  
+  .blog-post h4 {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .blog-post p {
+    color: #B0B0B0;
+  }
+  
+  .blog-post a {
+    color: #00CCFF;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .blog-post a:hover {
+    color: #9747FF;
+  }
+  
