@@ -1,101 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-
-/* Projects Section */
 .projects-section {
   text-align: center;
-  padding: 40px;
-  font-family: 'Lato', sans-serif; /* Lato for project section */
+  background-color: #111;
+  padding: 20px 0;
+  color: #fff;
 }
 
-.projects-section h2 {
-  font-family: 'Poppins', sans-serif; /* Poppins for the title */
-  font-size: 2rem;
-  font-weight: 600;
-  color: #00CCFF; /* Cyan color for the title */
-  margin-bottom: 30px;
-}
-
-/* Carousel Container */
 .carousel-container {
-  position: relative;
-  max-width: 1000px;
-  margin: auto;
-  overflow: hidden;
-}
-
-/* Carousel Item */
-.carousel-item {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  position: relative;
+  max-width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
   position: relative;
 }
 
-/* Project Image */
+.carousel-track {
+  display: flex;
+  animation: scroll 12s linear infinite;
+  width: calc(200%); 
+}
+
+.carousel-item {
+  min-width: 25%; 
+  box-sizing: border-box;
+}
+
 .carousel-item img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   border-radius: 10px;
-  transition: transform 0.3s ease;
 }
 
-.carousel-item:hover img {
-  transform: scale(1.1); /* Zoom effect on hover */
-}
-
-/* Info Panel inside carousel */
 .carousel-item-info {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-/* Project Title */
-.carousel-item-info h4 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 600;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
-  margin: 10px 0;
+  text-align: left;
+  border-radius: 0 0 10px 10px;
 }
 
-/* Project Description */
-.carousel-item-info p {
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  color: #B0B0B0; /* Light gray for description */
-  margin-bottom: 20px;
-}
-
-/* Carousel Arrows */
-.carousel-arrow {
-  position: absolute;
-  top: 50%;
-  font-size: 2.5rem;
-  color: #fff;
-  cursor: pointer;
-  z-index: 10;
-  transition: color 0.3s ease;
-}
-
-.left-arrow {
-  left: 10px;
-}
-
-.right-arrow {
-  right: 10px;
-}
-
-.carousel-arrow:hover {
-  color: #00CCFF; /* Cyan on hover */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); 
+  }
 }
 
 
